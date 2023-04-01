@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+@media screen and (max-with:620px){
+   .card{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 320px 220px 220px 2fr 180px 660px 130px 1fr 260px 250px 200px;
+   }
+   .box{
+      width: auto;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      background-repeat: no-repeat;
+      background-image:url(./images/bg-header-mobile.png);
+      
+   }
+   .box1,.box2{
+      width: auto;
+   }
+   .container{
+      grid-template-columns: auto;
+      grid-template-rows: 50% 200px 1fr;
+   }
+   .box3{
+      width: auto;
+   }
+   .box4{
+      width: auto;
+   }
+   .box5{
+      width: auto;
+   }
+
+ }
+
+
+
+:root{
+    /*fonts*/
+    --font-family: "Bai Jamjuree" , sans-surfice;
+    --font-size: 18px;
+    --font-weight-normal: 400 ;
+    --font-weight-bold:600;
+    /*colors*/
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue:hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue:hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size:var(--font-size) ;
+    font-weight: var(--font-weight);
+    height: 100vh;
+    width: 100vw;
+  
+}
+.card{
+   display: grid;
+   grid-template-rows: 320px 220px 220px 2fr 180px 660px 130px 1fr 260px 250px 200px;
+}
+.box{
+   width: auto;
+   grid-column: 1/2;
+   grid-row: 1/2;
+   background-repeat: no-repeat;
+   background-image:url(./images/bg1.png)
+}
+.box1{
+   grid-column: 1/2;
+   grid-row: 2/3;
+}
+.box2{
+   grid-column: 1/2;
+   grid-row: 3/4;
+}
+
+.box > svg{
+   margin-top: 120px;
+   margin-left: 45%;
+   display: block;
+}
+h1{
+  padding-top: 10px;
+  padding-bottom:15px ;
+}
+h2{
+   padding-top: 110px;
+   padding-bottom: 20px;
+}
+h1,p,h2{
+   text-align: center;
+   margin: 0px;
+}
+h1,h2,h3{
+   color: var(--Dark-Grayish-Blue);
+}
+p{
+   color: var(--Grayish-Blue);
+   font-size:medium;
+}
+
+.button-ios{
+   background-color:var(--Strong-Cyan) ;
+   border:1px solid var(--Strong-Cyan);
+   color: white;
+   width:172px;
+   height: 43px;
+   font-family: var(--font-family);
+   margin-left: 530px ;
+   margin-top: 40px;
+   border-radius: 25px;
+   font-weight: 700;
+   box-shadow: 2px 2px 1px hsl(171, 63%, 39%);
+   cursor: pointer;
+}
+.button-ios:hover{
+   box-shadow: 8px 8px 10px hsla(171, 66%, 44%,0.25);
+}
+.button-mac{
+   background-color: var(--Light-Blue);
+   box-shadow: 2px 2px 1px hsl(233, 97%, 64%);
+   color:white;
+   width:172px;
+   height:43px;
+   font-family: var(--font-family);
+   border-radius: 25px;
+   margin-left: 8px;
+   font-weight: 700;
+   border: 1px solid var(--Light-Blue);
+   cursor: pointer;
+}
+.button-mac:hover{
+   box-shadow: 8px 8px 8px hsla(233, 100%, 69%, 0.25);;
+}
+.img1{
+   margin-top: 85px;
+   width: 100%;
+}
+
+
+.container{
+   grid-column: 1/2;
+   grid-row: 4/5;
+   display: grid;
+   grid-template-columns: 50% 100px 1fr;
+}
+.d1{
+   grid-column: 1/2;
+   grid-row: 1/2;
+}
+.d2{
+   grid-column: 3/4;
+   grid-row: 1/2;
+   margin-top:  100px; 
+   padding-top: 50px;
+}
+.d2 > p{
+   text-align: start;
+   padding-top: 10px;
+   
+}
+.img2{
+   margin-left:  auto;
+   margin-right: auto;
+   margin-top: 80px;
+   display: block;
+}
+.h2{
+  padding-top: 20px;
+}
+.box3{
+   grid-column: 1/2;
+   grid-row: 5/6;
+}
+.box3 > h2{
+   padding-top: 50px;
+}
+.box4{
+   grid-column: 1/2;
+   grid-row: 6/7;
+}
+.box5{
+   grid-column: 1/2;
+   grid-row: 7/8;
+}
+
+.container2{
+   grid-column: 1/2;
+   grid-row: 8/9;
+   display: grid;
+   grid-template-columns: 160px 1fr 1fr 1fr 160px;
+   grid-template-rows:150px 200px;
+}
+.d3{
+   grid-column: 2/3;
+   grid-row: 1/2;
+  
+}
+.d4{
+   grid-column: 3/4;
+   grid-row: 1/2;
+   
+}
+.d5{
+   grid-column: 4/5;
+   grid-row: 1/2;
+   
+}
+.d6{
+   grid-column: 2/3;
+   grid-row: 2/3;
+}
+.d7{
+   grid-column: 3/4;
+   grid-row: 2/3;
+  
+}
+.d8{
+   grid-column: 4/5;
+   grid-row: 2/3;
+}
+.d3 > svg{
+   margin-top: 25%;
+   margin-left: 45%;
+}
+.d4 > svg{
+   margin-top: 25%;
+   margin-left: 45%;
+}
+.d5 > svg{
+   margin-top: 25%;
+   margin-left: 45%;
+}
+h4{
+   text-align: center;
+   margin-bottom: 15px;
+}
+.container3{
+   grid-column: 1/2;
+   grid-row: 9/10;
+   display: grid;
+   grid-template-columns:  190px 1fr 1fr 1fr 1fr 1fr 100px;
+   margin-top: 70px;
+   margin-bottom: 10px;
+}
+.google{
+   grid-column: 2/3;
+   grid-row: 1/2;
+   
+}
+.ibm{
+   grid-column: 3/4;
+   grid-row: 1/2;
+   margin-left: 30px;
+}
+.microsoft{
+   grid-column: 4/5;
+   grid-row: 1/2;
+   margin-left: 30px;
+}
+.hp{
+   grid-column: 5/6;
+   grid-row: 1/2;
+   margin-left: 35px;
+}
+.vector{
+   grid-column: 6/7;
+   grid-row: 1/2;
+   
+}
+
+.box6{
+   grid-column: 1/2;
+   grid-row: 10/11;
+}
+.box6 > h2{
+   padding-top: 10px;
+}
+.container4{
+   grid-column: 1/2;
+   grid-row: 11/12;
+   display: grid;
+   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+   margin-top: 70px;
+   background-color: hsl(0, 0%, 93%);
+}
+.c{
+   grid-column: 1/2;
+   grid-row: 1/2;
+
+}
+.d9{
+   grid-column: 2/3;
+   grid-row: 1/2;
+}
+.d10{
+   grid-column: 3/4;
+   grid-row: 1/2;
+}
+.d11{
+   grid-column: 4/5;
+   grid-row: 1/2;
+}
+.d12{
+   grid-column: 6/7;
+   grid-row: 1/2;
+}
+.d11 > p{
+   text-align: start;
+   padding-left: 15px;
+   cursor: pointer;
+   padding-top: 35px;
+}
+.d11 > p:hover{
+   color: var(--Strong-Cyan);
+}
+.d10 > p{
+   text-align: start;
+   padding-left: 90px;
+   cursor: pointer;
+   padding-top: 35px;
+}
+.d10 >p:hover{
+   color: var(--Strong-Cyan);
+}
+.d9 >p{
+   text-align: start;
+   padding-left: 150px;
+   cursor: pointer;
+   padding-top: 35px;
+}
+.d9 >p:hover{
+   color: var(--Strong-Cyan);
+}
+.svg1{
+   padding-top: 55px;
+   margin-left: 0;
+   cursor: pointer;
+}
+.svg2{
+   margin-top: -20px;
+   margin-left: 20px;
+   cursor: pointer;
+}
+.svg3{
+   margin-top: -25px;
+   margin-left: 20px;
+   cursor: pointer;
+}
+.svg1:hover{
+   background-color: var(--Strong-Cyan);
+}
+.svg2:hover{
+   background-color: var(--Strong-Cyan);
+}
+.svg3:hover{
+   background-color: var(--Strong-Cyan);
+}
+.c > img{
+   width: 25%;
+   margin-left: 130px;
+   margin-top: 35px;
+}
