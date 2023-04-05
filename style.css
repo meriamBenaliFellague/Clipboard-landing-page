@@ -1,40 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
 
-@media screen and (max-with:620px){
-   .card{
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: 320px 220px 220px 2fr 180px 660px 130px 1fr 260px 250px 200px;
-   }
-   .box{
-      width: auto;
-      grid-column: 1/2;
-      grid-row: 1/2;
-      background-repeat: no-repeat;
-      background-image:url(./images/bg-header-mobile.png);
-      
-   }
-   .box1,.box2{
-      width: auto;
-   }
-   .container{
-      grid-template-columns: auto;
-      grid-template-rows: 50% 200px 1fr;
-   }
-   .box3{
-      width: auto;
-   }
-   .box4{
-      width: auto;
-   }
-   .box5{
-      width: auto;
-   }
-
- }
-
-
-
 :root{
     /*fonts*/
     --font-family: "Bai Jamjuree" , sans-surfice;
